@@ -1,0 +1,773 @@
+a:hover{
+    color: blue;
+}
+
+#youtube1:hover{
+    color: red;
+}
+
+#instagram1:hover{
+    color: pink;
+}
+
+#youtube2:hover{
+    color: red;
+}
+
+#instagram2:hover{
+    color: violet;
+}
+
+.marginright:hover{
+    background-color: black;
+}
+
+.marginleft:hover{
+    background-color: black;
+}
+
+.borderright:hover{
+    background-color: black;
+}
+
+.borderleft:hover{
+    background-color: black;
+}
+
+
+body {
+    font-size:16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height:13vh;
+    background-color: white;
+    display:flex;
+    flex-direction:row;
+    padding: 0 15px 25px;
+}
+
+#websitelogo{
+    width:20vw;
+    padding:5px 0 0 0;
+}
+
+#websitelogo img{
+    height:100%;
+}
+
+#navigation{
+    width:80vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+#navigationsocial{
+    margin-bottom:22px;
+    display:flex;
+    align-items:end;
+}
+
+.navigationsocialicon{
+    color:#ABABAB;
+    font-size:25px;
+    margin:0 0 0 10px;
+}
+
+.fa-twitter-square{
+    margin:0 12px 0 0;
+}
+
+#navigationsocial form{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width:200px;
+}
+
+#navigationsocial form label{
+    position: relative;
+    top:38px;
+    left:10px;
+    font-style:italic;
+    font-size:92%;
+    color:#ABABAB;
+}
+
+#navigationsocial form a{
+    position: relative;
+    left:90%;
+    top:20px;
+    color:#ABABAB;
+}
+
+#navigationsocial form input{
+    width:100%;
+    height:25px;
+    border: 1px solid #ABABAB;
+}
+
+#navigationpage ul{
+    display:flex;
+    flex-direction:row;
+}
+
+#navigationpage ul li a {
+    text-decoration:none;
+    color:#ABABAB;
+}
+
+.marginright{
+    padding:0 30px 0 30px;
+    border-right:1px solid #ABABAB;
+}
+
+.marginleft{
+    padding:0 0 0 30px;
+}
+
+#subscription{
+    background-color:black;
+    color:white;
+    height:15vh;
+    padding: 35px 15px 0;
+    margin: 0 0 30px;
+}
+
+#subscription form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    justify-content: center;
+}
+
+#subscription form label{
+    font-style:italic;
+    margin:0 0 25px;
+    letter-spacing: 1.3px;
+    font-size:110%;
+}
+
+#subscription form section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#subscription form section section {
+    display:flex;
+    flex-direction:row;
+}
+
+#subscription form section input{
+    border: 1px solid #ABABAB;
+    width:250px;
+    height:25px;
+}
+
+#subscription form section section label{
+    position:relative;
+    bottom:21px;
+    right:55px;
+    color:#ABABAB;
+    font-size:93%;
+}
+
+#subscription form section section a{
+    position: relative;
+    bottom:32px;
+    left:50%;
+    color:#ABABAB;
+}
+
+.sectionlayout {
+    height: 40vh;
+    background-color:white;
+    padding:0 15px;
+}
+
+#pierecipe{
+    margin: 0 15px; 
+    text-align:center;
+}
+
+#pierecipe h1{
+    font-weight:bold;
+}
+
+#rating{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+#rating section{
+    margin:15px 0 0;
+    color: #ABABAB;
+    font-size:90%;
+}
+
+#rating section p{
+    border-left: 1px solid #ABABAB;
+    padding: 0 10px;
+}
+
+#stars{
+    display:flex;
+    flex-direction:row;
+    padding: 0 10px 0 0;
+}
+
+.fa-star{
+    color:#FFC164;
+    padding:0 2px;
+}
+
+#comment{
+    padding:10px 50px 0;
+    font-size:80%;
+    line-height:16px;
+    text-align: justify;
+}
+
+#images{
+    display:flex;
+    flex-direction:row;
+    margin:25px 15px 0;
+    height:calc(30vh + 30px);
+}
+
+#images > section{
+    width:20%;
+}
+
+#images > section:last-child{
+    width:80%;
+}
+
+#pieimage1{
+    background-image:url(../../images/pie4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:10vh;
+    margin: 0 15px 15px 0;
+}
+
+#pieimage2{
+    background-image:url(../../images/pie8.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:10vh;
+    margin: 0 15px 15px 0;
+}
+
+#pieimage3{
+    background-image:url(../../images/pie1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-position: center 40%;
+    height:10vh;
+    margin: 0 15px 0 0;
+}
+
+#pieimage4{
+    background-image:url(../../images/pie2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:calc(30vh + 30px);
+}
+
+#videos{
+    margin:25px 0 0;
+}
+
+#video1 iframe{
+    width:100%;
+    height:50vh;
+}
+
+#videocollection{
+    display:flex;
+    flex-direction:row;
+    margin: 15px 0 0;
+}
+
+#videocollection section{
+    width: calc((100% - 30px) / 3);
+}
+
+#videocollection section:first-child{
+    margin: 0 15px 0 0; 
+}
+
+#videocollection section:last-child{
+    margin: 0 0 0 15px;
+}
+
+#videocollection section iframe{
+    width:100%;
+}
+
+#descriptions{
+    margin: 25px 0 0;
+    background-color: rgba(218,218,218, 0.5);  
+}
+
+#descriptions > section{
+    margin:0 30px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+
+#descriptions section > p:first-child{
+    font-style: italic;
+    padding:0 0 15px;
+    color: #ABABAB;
+}
+
+#ingredients{
+    margin: 25px 15px 0 15px;
+    border: 1px solid #ABABAB;
+}
+
+#ingredients h2{
+    padding: 15px 15px 0 15px;
+    font-weight:bold;
+}
+
+#ingredients section{
+    padding:5px 15px 15px 15px;
+}
+
+#ingredients section ul li{
+    line-height:17px;
+    font-size:90%;
+    list-style-type: circle;
+    margin: 0 0 0 15px;
+}
+
+#directions{
+    background-color:rgba(218,218,218, 0.5);
+}
+
+#directions h3{
+    margin:25px 30px 0;
+    padding: 15px 0 0 0;
+    font-weight:bold;
+}
+
+#directions > section {
+    margin:0 30px;
+}
+
+#directions section section p{
+    font-weight:bold;
+    margin:12px 0 5px;
+    font-size:90%;
+}
+
+#directions section section ol li{
+    font-size:85%;
+    list-style-type:upper-roman;
+    margin:0 15px;
+    line-height:17px;
+}
+
+#directions > section:last-child{
+    margin: 10px 15px 0;
+    padding: 0 0 15px 15px;
+    font-weight:bold; 
+}
+
+#review{
+    height: 15vh;
+    border-bottom: 1px solid rgba(218,218,218, 0.5);
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items:center;
+}
+
+#review section a{
+    text-decoration:none;
+    color: #ABABAB;
+}
+
+#review section a i {
+    color: #ABABAB;
+}
+
+#popular{
+    margin: 25px 30px;
+}
+
+#popular h4{
+    font-weight:bold;
+    text-align:center;
+
+}
+
+#popular > section {
+    margin:25px 0 0;
+    display:flex; 
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+#popular section section {
+    width:calc((100vw - 120px) / 3);
+    text-align:center;
+}
+
+.align {
+    height:14vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    background-color:rgba(218,218,218, 0.8);
+}
+
+.align section p{
+    font-size:80%;
+    font-weight:bold;
+    padding: 0 15px 10px;
+    line-height:15px;
+}
+
+#oldfashionapplepie{
+    background-image:url(../../images/pie5.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:16vh;
+}
+
+#antiqueapplepie{
+    background-image:url(../../images/pie8.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:16vh;
+}
+
+#displaynone{
+    display:none;
+}
+
+#applecrumblepie{
+    background-image:url(../../images/pie6.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:16vh;
+}
+
+#chai-spicedapplepie{
+    background-image:url(../../images/pie7.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:16vh;
+}
+
+.fa-star-o{
+    color:#FFC164;
+}
+
+footer{
+    background-color:#ABABAB;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+footer section {
+    margin-top:45px;
+}
+
+#footernavigation ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+#footernavigation ul li a{
+    color:white;
+    text-decoration:none;
+    opacity:0.8;
+    font-size: 93%;
+    padding:0 10px;
+}
+
+footer section p{
+    color:white;
+    opacity:0.8;
+    margin-bottom: 45px;
+}
+
+.borderright{
+    border-right:1px solid white; 
+}
+
+.footericon{
+    color:white;
+    font-size:35px;
+    margin:0 0 0 15px;
+    opacity:0.6;
+}
+
+@media only screen and (min-width: 600px){
+    #comment{
+        padding:10px 100px 0;
+    }
+
+    .align {
+        height:16vh;
+    }
+
+    #oldfashionapplepie{
+        height:19vh;
+    }
+    
+    #antiqueapplepie{
+        height:19vh;
+    }
+    
+    #chai-spicedapplepie{
+        height:19vh;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #pierecipe{
+        margin: 0 15px; 
+        text-align:left;
+        display:flex;
+        flex-direction:row;
+    }
+
+    #pierecipe h3{
+        font-weight:bold;
+        font-size: 120%;
+    }
+
+    #pierecipe > section{
+        width:50%;
+    }
+    
+    #display{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+    }
+
+    #rating{
+        margin: 35px 0 15px;
+        display:flex;
+        flex-direction:row;
+        justify-content: flex-start;
+    }
+
+    #rating section{
+        margin:0 0;
+    }
+
+    #rating section p{
+        font-size:110%;
+    }
+
+    #comment{
+        padding: 0;
+        font-size:100%;
+        line-height:20px;
+        text-align: left;
+        margin: 0 15px 0 0;
+    }
+    
+    #images{
+        display:flex;
+        flex-direction:row;
+        margin:0;
+        height:calc(30vh + 30px);
+    }
+
+    #pieimage1{
+        height:10vh;
+    }
+
+    #pieimage2{
+        height:10vh;
+    }
+    
+    #pieimage3{
+        height:10vh;
+    }
+    
+    #pieimage4{
+        height:calc(30vh + 30px);
+    }
+
+    .align {
+        height:20vh;
+    }
+
+    #oldfashionapplepie{
+        height:35vh;
+    }
+    
+    #antiqueapplepie{
+        height:35vh;
+    }
+    
+    #chai-spicedapplepie{
+        height:35vh;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #displaynone{
+        display:block;
+    }
+
+    #popular section section {
+        width:calc((100vw - 120px) / 4);
+        text-align:center;
+    }
+
+    #applecrumblepie{
+        height:35vh;
+    }
+
+    #videos{
+        display:flex;
+        flex-direction:row;
+        align-items:flex-end;
+        width:100%;
+    }
+
+    #video1{
+        width:45%;
+        margin: 0 0 0 15px;
+    }
+
+    #videocollection{
+        width:55%;
+        margin: 0 15px;
+    }
+
+    #sidebyside{
+        display:flex;
+        flex-direction:row;
+        padding: 0 0 0 15px;
+        width:calc (100vw - 30px);
+    }
+
+    #descriptions {
+        padding: 15px;
+    }
+
+
+    #descriptions > section{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #descriptions section {
+        height:100%;
+    }
+
+    #descriptions section > p:first-child{
+        font-style: italic;
+        padding:0 0 5px;
+        color: #ABABAB;
+    }
+
+    #ingredients{
+        width:calc(100% - 204px);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #subscription{
+        height:8vh;
+    }
+
+    #subscription form{
+        flex-direction:row;
+        align-items:center;
+        height:8vh;
+    }
+
+    #balance{
+        padding: 0 20px 12px 0;
+    }
+
+    #display{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+    }
+
+    #rating{
+        margin: 35px 0 15px;
+    }
+
+    #comment{
+        margin: 0 15px 0 0;
+    }
+
+    #images{
+        display:flex;
+        flex-direction:row;
+        margin:0;
+        height:calc(60vh + 30px);
+    }
+
+    #pieimage1{
+        height:20vh;
+    }
+
+    #pieimage2{
+        height:20vh;
+    }
+    
+    #pieimage3{
+        height:20vh;
+    }
+    
+    #pieimage4{
+        height:calc(60vh + 30px);
+    }
+
+    #popular section section {
+        width:calc((100vw - 240px) / 4);
+        text-align:center;
+    }
+
+    #oldfashionapplepie{
+        height:50vh;
+    }  
+    
+    #antiqueapplepie{
+        height:50vh;
+    }
+    
+    #chai-spicedapplepie{
+        height:50vh;
+    }
+
+    #applecrumblepie{
+        height:50vh;
+    }
+}

@@ -1,0 +1,336 @@
+a:hover{
+    color: blue;
+}
+
+#youtube1:hover{
+    color: red;
+}
+
+#instagram1:hover{
+    color: pink;
+}
+
+#youtube2:hover{
+    color: red;
+}
+
+#instagram2:hover{
+    color: violet;
+}
+
+.marginright:hover{
+    background-color: black;
+}
+
+.marginleft:hover{
+    background-color: black;
+}
+
+.borderright:hover{
+    background-color: black;
+}
+
+.borderleft:hover{
+    background-color: black;
+}
+
+
+body {
+    font-size:16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height:13vh;
+    background-color: white;
+    display:flex;
+    flex-direction:row;
+    padding: 0 15px 25px;
+}
+
+#websitelogo{
+    width:20vw;
+    padding:5px 0 0 0;
+}
+
+#websitelogo img{
+    height:100%;
+}
+
+#navigation{
+    width:80vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+#navigationsocial{
+    margin-bottom:22px;
+    display:flex;
+    align-items:end;
+}
+
+.navigationsocialicon{
+    color:#ABABAB;
+    font-size:25px;
+    margin:0 0 0 10px;
+}
+
+.fa-twitter-square{
+    margin:0 12px 0 0;
+}
+
+#navigationsocial form{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width:200px;
+}
+
+#navigationsocial form label{
+    position: relative;
+    top:38px;
+    left:10px;
+    font-style:italic;
+    font-size:92%;
+    color:#ABABAB;
+}
+
+#navigationsocial form a{
+    position: relative;
+    left:90%;
+    top:20px;
+    color:#ABABAB;
+}
+
+#navigationsocial form input{
+    width:100%;
+    height:25px;
+    border: 1px solid #ABABAB;
+}
+
+#navigationpage ul{
+    display:flex;
+    flex-direction:row;
+}
+
+#navigationpage ul li a {
+    text-decoration:none;
+    color:#ABABAB;
+}
+
+.marginright{
+    padding:0 30px 0 30px;
+    border-right:1px solid #ABABAB;
+}
+
+.marginleft{
+    padding:0 0 0 30px;
+}
+
+#subscription{
+    background-color:black;
+    color:white;
+    height:15vh;
+    padding: 35px 15px 0;
+    margin: 0 0 30px;
+}
+
+#subscription form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    justify-content: center;
+}
+
+#subscription form label{
+    font-style:italic;
+    margin:0 0 25px;
+    letter-spacing: 1.3px;
+    font-size:110%;
+}
+
+#subscription form section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#subscription form section section {
+    display:flex;
+    flex-direction:row;
+}
+
+#subscription form section input{
+    border: 1px solid #ABABAB;
+    width:250px;
+    height:25px;
+}
+
+#subscription form section section label{
+    position:relative;
+    bottom:21px;
+    right:55px;
+    color:#ABABAB;
+    font-size:93%;
+}
+
+#subscription form section section a{
+    position: relative;
+    bottom:32px;
+    left:50%;
+    color:#ABABAB;
+}
+
+#form{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;   
+    margin: 0 0 25px;
+}
+
+#form form label{
+    font-weight:bold;
+}
+
+#form form section section section label{
+    font-size:90%;
+}
+
+.top{
+    margin:20px 0 0;
+}
+
+.input {
+    height:3vh;
+    margin:5px 0 0 0;
+    border: 1px solid #ABABAB;
+    width:40vw;
+}
+
+#top{
+    margin:20px 0 0;
+}
+
+textarea{
+    margin:5px 0 0 0;
+    height:6vh;
+    border: 1px solid #ABABAB;
+    width:40vw;
+}
+
+#row {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+#row section:first-child{
+    width:70%;
+}
+
+.fa-star, .fa-star-o{
+    color:#FFC164;
+    margin:5px 5px 0 0;
+}
+
+#row section i{
+    font-size: 130%;
+}
+
+#row section:last-child{
+    width:30%;
+}
+
+#row section:last-child input{
+    width:100%;
+    height:100%;
+    padding:5px;
+}
+
+footer{
+    background-color:#ABABAB;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+footer section {
+    margin-top:45px;
+}
+
+#footernavigation ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+#footernavigation ul li a{
+    color:white;
+    text-decoration:none;
+    opacity:0.8;
+    font-size: 93%;
+    padding:0 10px;
+}
+
+footer section p{
+    color:white;
+    opacity:0.8;
+    margin-bottom: 45px;
+}
+
+.borderright{
+    border-right:1px solid white; 
+}
+
+.footericon{
+    color:white;
+    font-size:35px;
+    margin:0 0 0 15px;
+    opacity:0.6;
+}
+
+@media only screen and (min-width: 768px){
+    .input {
+        width:27vw;
+    }
+
+    textarea{
+        width:27vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .input {
+        width:23vw;
+    }
+
+    textarea{
+        width:23vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #subscription{
+        height:8vh;
+    }
+
+    #subscription form{
+        flex-direction:row;
+        align-items:center;
+        height:8vh;
+    }
+
+    #balance{
+        padding: 0 20px 12px 0;
+    }
+
+    .input {
+        width:18vw;
+    }
+    textarea{
+        width:18vw;
+    }
+}

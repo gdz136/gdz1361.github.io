@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- assignment name for mdm  -->
+		<title>DG8002 - Website Design</title>
+        
+        <!-- css reset -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+        
+        <!-- linking to external stylesheet -->
+        <link rel="stylesheet" href="assets/css/DG8002_Assignment3_Group7_Homepage_Style.css" />
+
+        <!-- linking to external icon stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- linking to external font stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
+
+	<body>
+
+        <header>
+            <section id="websitelogo">
+                <img src="images/websitelogo.PNG" alt="websitelogo">
+            </section>
+            <section id="navigation">
+                <section id="navigationsocial">
+                    <a class="navigationsocialicon" id="yt1" href="https://www.youtube.com/"  target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    <a class="navigationsocialicon" id="fb1" href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook-square"></i></a>
+                    <a class="navigationsocialicon" id="ins1" href="https://www.instagram.com/"  target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="navigationsocialicon" id="tw1" href="https://twitter.com/?lang=en"  target="_blank"><i class="fa fa-twitter-square"></i></a>
+                    <form action="/action_page.php">
+                        <a href=""  target="_blank"><i class="fa fa-search"></i></a>
+                        <input type="search" placeholder="search recipes" id="gsearch" name="gsearch">
+                        <!-- <a href=""  target="_blank"><i class="fa fa-chevron-right"></i></a> -->
+                    </form>
+                </section>
+                <section id="navigationpage">
+                    <ul>
+                        <li>
+                            <a href="#websitelogo" id="home" class="marginright">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" id="about" class="marginright">About</a>
+                        </li>
+                        <li>
+                            <a href="" id="recipes" class="marginleft">Recipes</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+
+        <section id="subscription">
+            <form action="/action_page.php">
+                <label for="email" id="balance">Get the Latest Recipes Right in your Inbox:</label>
+                <section>
+                    <input type="email" id="email" name="email" required>
+                    <section>
+                        <label for="gsearch">email address</label>
+                        <button id="submitbutton" type="submit" onclick="myFunc(e)"> <i class="fa fa-chevron-right"></i></button>
+                    </section>
+                </section>
+            </form>
+        </section>
+
+        <!-- breakfast ideas -->
+        <section class="sectionlayout">
+            <p>Breakfast Ideas</p>
+            <section>
+                <section id="avocado">
+                    <a href="" class="title">Smashed Avocadeo Toast With Egg</a>
+                </section>
+                <section id="smoothie">
+                    <a href="" class="title">Tropical Smoothie Bowl</a>
+                </section>
+                <section id="blueberrymuffin">
+                    <a href="" class="title">Blue Berry Muffin</a>
+                </section>
+            </section>
+        </section>
+
+        <!-- lunchideas -->
+        <section class="sectionlayout">
+            <p>Lunch Ideas</p>
+            <section>
+                <section id="chickenlettucewraps">
+                    <a href="" class="title">Chicken Lettuce Wraps</a>
+                </section>
+                <section id="mediterraneangrilledchickensalad">
+                    <a href="" class="title">Mediterranean Grilled Chicken Salad</a>
+                </section>
+                <section id="tunamelt">
+                    <a href="" class="title">Tuna Melt</a>
+                </section>
+            </section>
+        </section>
+
+        <!-- dinnerideas -->
+        <section class="sectionlayout">
+            <p>Dinner Ideas</p>
+            <section>
+                <section id="crockpotchickentaco">
+                    <a href="" class="title">Crock-Pot Chicken Taco</a>
+                </section>
+                <section id="oldbayshrimpandsusage">
+                    <a href="" class="title">Old Bay Shrimp and Susage</a>
+                </section>
+                <section id="chickentortillasoup">
+                    <a href="" class="title">Chicken Tortilla Soup</a>
+                </section>
+            </section>
+        </section>
+
+        <!-- dinnerideas -->
+        <section class="sectionlayout">
+            <p>Dessert Ideas</p>
+            <section>
+                <section id="grandmaopleshomemadeappliepie">
+                    <a href="recipe.html" id="title">Grandma Ople's Homemade Apple Pie</a>
+                </section>
+                <section id="birthdaycake">
+                    <a href="" class="title">Birthday Cake</a>
+                </section>
+                <section id="cookiedoughicecreamsandwiches">
+                    <a href="" class="title">Cookie Dough Ice Cream Sandwiches</a>
+                </section>
+            </section>
+        </section>
+
+        <!-- About PIG OUT-->
+        <section id="about">
+            <h1>About PIG OUT</h1>
+            <section>
+                <section>
+                    <section>
+                        <section >
+                            <h2>My Cookbooks</h2>
+                            <p class="normal">Check out my new cook book available in stores now!</p>
+                        </section>
+                        <section id="cookbook">
+
+                        </section>
+                        <section>
+                            <a href="" class="click">Order Now!</a>
+                        </section>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Get to Know Me</h2>
+                        <section id="intro">
+                            
+                        </section>
+                        <section>
+                            <p class="normal" id="bottom">Hey! I’m Sandra Come join me in my culinary adventures where we'll be using simple, fresh ingredients and transforming them into tasteful meals for the everyday home cook.</p>
+                        </section>
+                        <section>
+                            <a href="" class="click">More About Me!</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        
+        <footer>
+            <section id="footernavigation">
+                <ul>
+                    <li>
+                        <a href="" id="aboutus" class="borderright">About Us</a>
+                    </li>
+                    <li>
+                        <a href="" id="subscribe" class="borderright">Subscribe</a>
+                    </li>
+                    <li>
+                        <a href="" id="contact" class="borderright">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="" id="privacy" class="borderleft">Privacy & Terms</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <a class="footericon" href="https://www.youtube.com/"  id="yt2" target="_blank"><i class="fa fa-youtube-play "></i></a>
+                <a class="footericon"href="https://www.facebook.com/"  id="fb2" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a class="footericon" href="https://www.instagram.com/" id="ins2" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="footericon" href="https://twitter.com/?lang=en" id="tw2" target="_blank"><i class="fa fa-twitter-square"></i></a>
+            </section>
+            <section>
+                <p>@ 2009 - 2021 PIG OUT, Inc.</p>
+            </section>
+        </footer>
+    <script>
+        var address=document.querySelector("#email");
+        var submitbutton=document.querySelector("#submitbutton");
+        submitbutton.addEventListener("click",sendemail);
+
+        function sendemail(){
+            alert("Thank you for subscribing. A confirmation email has been sent to the address " + address.value);
+            }
+            
+        
+
+        var yt1=document.querySelector("#yt1");
+        var fb1=document.querySelector("#fb1");
+        var ins1=document.querySelector("#ins1");
+        var tw1=document.querySelector("#tw1");
+
+        var yt2=document.querySelector("#yt2");
+        var fb2=document.querySelector("#fb2");
+        var ins2=document.querySelector("#ins2");
+        var tw2=document.querySelector("#tw2");
+
+        yt1.addEventListener("mouseover",changecolor);
+        yt2.addEventListener("mouseover",changecolor);
+        fb1.addEventListener("mouseover",changecolor);
+        fb2.addEventListener("mouseover",changecolor);
+        ins1.addEventListener("mouseover",changecolor);
+        ins2.addEventListener("mouseover",changecolor);
+        tw1.addEventListener("mouseover",changecolor);
+        tw2.addEventListener("mouseover",changecolor);
+
+        yt1.addEventListener("mouseout",removecolor);
+        yt2.addEventListener("mouseout",removecolor);
+        fb1.addEventListener("mouseout",removecolor);
+        fb2.addEventListener("mouseout",removecolor);
+        ins1.addEventListener("mouseout",removecolor);
+        ins2.addEventListener("mouseout",removecolor);
+        tw1.addEventListener("mouseout",removecolor);
+        tw2.addEventListener("mouseout",removecolor);
+
+        var aboutus=document.querySelector("#aboutus");
+        var contact=document.querySelector("#contact");
+        var privacy=document.querySelector("#privacy");
+        var subscribe=document.querySelector("#subscribe");
+
+        aboutus.addEventListener("mouseover",changecolor);
+        contact.addEventListener("mouseover",changecolor);
+        privacy.addEventListener("mouseover",changecolor);
+        subscribe.addEventListener("mouseover",changecolor);
+
+        aboutus.addEventListener("mouseout",removefooterback);
+        contact.addEventListener("mouseout",removefooterback);
+        privacy.addEventListener("mouseout",removefooterback);
+        subscribe.addEventListener("mouseout",removefooterback);
+
+        var about=document.querySelector("#about");
+        var home=document.querySelector("#home");
+        var recipes=document.querySelector("#recipes");
+
+        about.addEventListener("mouseover",changecolor);
+        home.addEventListener("mouseover",changecolor);
+        recipes.addEventListener("mouseover",changecolor);
+
+        about.addEventListener("mouseout",removeback);
+        home.addEventListener("mouseout",removeback);
+        recipes.addEventListener("mouseout",removeback);
+
+        var title=document.querySelector("#title");
+        title.addEventListener("mouseover",changecolor);
+        title.addEventListener("mouseout",removeback);
+
+        function changecolor(){
+            if (this.id=="yt1") {
+                this.style.color="red";
+            }
+            if (this.id=="yt2") {
+                this.style.color="red";
+            }
+            if (this.id=="fb1") {
+                this.style.color="blue";
+            }
+            if (this.id=="fb2") {
+                this.style.color="blue";
+            }
+            if (this.id=="ins1") {
+                this.style.color="violet";
+            }
+            if (this.id=="ins2") {
+                this.style.color="violet";
+            }
+            if (this.id=="tw1") {
+                this.style.color="blue";
+            }
+            if (this.id=="tw2") {
+                this.style.color="blue";
+            }
+            if (this.id=="aboutus") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="contact") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="subscribe") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="privacy") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="home") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="about") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="recipes") {
+                this.style.backgroundColor="black";
+            }
+            if (this.id=="title") {
+                this.style.backgroundColor="rosybrown";
+            }
+        }
+
+        function removecolor(){
+            this.style.color="grey";
+        }
+
+        function removeback(){
+            this.style.backgroundColor="white";
+        }
+
+        function removefooterback(){
+            this.style.backgroundColor="#ABABAB";
+        }
+
+
+        var searchtext=querySelector("#searchtext");
+        searchtext.addEventListener("click",removetext);
+
+        function removetext(){
+            label.style.color="white";
+        }
+
+        function myFunc(e){
+                a.preventDefault();
+        }
+            
+    </script>
+    </body>
+
+</html>
+

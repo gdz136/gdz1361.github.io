@@ -1,0 +1,516 @@
+body {
+    font-size:16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height:13vh;
+    background-color: white;
+    display:flex;
+    flex-direction:row;
+    padding: 0 15px 25px;
+}
+
+button{
+    background:none;
+    position: relative;
+    bottom:32px;
+    border:none;
+    left:50%;
+}
+
+#websitelogo{
+    width:20vw;
+    padding:5px 0 0 0;
+}
+
+#websitelogo img{
+    height:100%;
+}
+
+#navigation{
+    width:80vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+#navigationsocial{
+    margin-bottom:22px;
+    display:flex;
+    align-items:end;
+}
+
+.navigationsocialicon{
+    color:#ABABAB;
+    font-size:25px;
+    margin:0 0 0 10px;
+}
+
+.fa-twitter-square{
+    margin:0 12px 0 0;
+}
+
+#navigationsocial form{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width:200px;
+}
+
+#navigationsocial form label{
+    position: relative;
+    top:38px;
+    left:10px;
+    font-style:italic;
+    font-size:92%;
+    color:#ABABAB;
+}
+
+
+#navigationsocial form a{
+    position: relative;
+    left:90%;
+    top:20px;
+    color:#ABABAB;
+}
+
+#navigationsocial form input{
+    width:100%;
+    height:25px;
+    border: 1px solid #ABABAB;
+}
+
+#navigationpage ul{
+    display:flex;
+    flex-direction:row;
+}
+
+#navigationpage ul li a {
+    text-decoration:none;
+    color:#ABABAB;
+}
+
+.marginright{
+    padding:0 30px 0 30px;
+    border-right:1px solid #ABABAB;
+}
+
+.marginleft{
+    padding:0 0 0 30px;
+}
+
+#subscription{
+    background-color:black;
+    color:white;
+    height:15vh;
+    padding: 35px 15px 0;
+    margin: 0 0 30px;
+}
+
+#subscription form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    justify-content: center;
+}
+
+#subscription form label{
+    font-style:italic;
+    margin:0 0 25px;
+    letter-spacing: 1.3px;
+    font-size:110%;
+}
+
+#subscription form section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#subscription form section section {
+    display:flex;
+    flex-direction:row;
+}
+
+#subscription form section input{
+    border: 1px solid #ABABAB;
+    width:250px;
+    height:25px;
+}
+
+#subscription form section section label{
+    position:relative;
+    bottom:21px;
+    right:55px;
+    color:#ABABAB;
+    font-size:93%;
+}
+
+#subscription form section section a{
+    position: relative;
+    bottom:32px;
+    left:50%;
+    color:#ABABAB;
+}
+
+.sectionlayout {
+    height: 40vh;
+    background-color:white;
+    padding:0 15px;
+}
+
+.sectionlayout > p{
+    background-color:white;
+    font-weight:bold;
+    position:relative;
+    top:12px;
+    width:44%;
+    left:33%;
+    text-align:center;
+}
+
+.sectionlayout > section {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    height:calc( 40vh - 16px);
+    border-top: 1px solid black;
+}
+
+.sectionlayout section section{
+    width:50%;
+    margin:50px 25px;
+    display:flex;
+    align-items:flex-end;
+}
+
+.sectionlayout section section a{
+    padding:15px;
+    background-color:white;
+    width:70%;
+    height:2vh;
+    display:flex; 
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+    line-height:16px;
+    font-size:80%;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+}
+
+#avocado{
+    background-image:url(../../images/avacado.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#smoothie{
+    background-image:url(../../images/smoothie.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#blueberrymuffin{
+    background-image:url(../../images/muffins.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    display:none;
+}
+
+#chickenlettucewraps{
+    background-image:url(../../images/wraps.png);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#mediterraneangrilledchickensalad{
+    background-image:url(../../images/salad.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#tunamelt{
+    background-image:url(../../images/tuna.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    display:none;
+}
+
+#crockpotchickentaco{
+    background-image:url(../../images/tacos.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#oldbayshrimpandsusage{
+    background-image:url(../../images/shrimp.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#chickentortillasoup{
+    background-image:url(../../images/tortilla.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    display:none;
+}
+
+#grandmaopleshomemadeappliepie{
+    background-image:url(../../images/pie2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#birthdaycake{
+    background-image:url(../../images/cake.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+}
+
+#cookiedoughicecreamsandwiches{
+    background-image:url(../../images/icecream.png);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    display:none;    
+}
+
+#about{
+    padding:0 15px;
+}
+
+#about h1{
+    background-color:white;
+    font-weight:bold;
+    position:relative;
+    top:12px;
+    width:44%;
+    left:33%;
+    text-align:center;
+}
+
+#about section section{
+    display:flex; 
+    flex-direction:column;
+    align-items:center;
+}  
+
+#about section section section h2{
+    padding:0 0 25px;
+    font-weight:bold;
+    width:100%;
+    text-align:center;
+}
+
+#about section section section section h2{
+    border-top:1px solid black;
+    padding:50px 0 10px;
+    width:calc(100vw - 45px);
+    text-align:center;
+}
+
+#about p{
+    text-align:center;
+    text-align-last:center;
+}
+
+.normal {
+    font-size:120%; 
+    line-height:25px; 
+    padding:15px 90px;
+}
+
+#bottom{
+    padding:15px 90px 0;
+}
+
+#cookbook{
+    background-image:url(../../images/recipebook.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 40%;
+    height:25vh;
+    width:50vw;
+}
+
+.click {
+    margin:30px 0 30px;
+    font-size:120%;
+    border:2px solid #ABABAB;
+    padding:7px 14px;
+    color:#ABABAB;
+    opacity:0.7;
+    text-decoration:none;
+}
+
+#intro{
+    background-image:url(../../images/sandra.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center 10%;
+    height:25vh;
+    width:50vw;
+}
+
+footer{
+    background-color:#ABABAB;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+footer section {
+    margin-top:45px;
+}
+
+#footernavigation ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+#footernavigation ul li a{
+    color:white;
+    text-decoration:none;
+    opacity:0.8;
+    font-size: 93%;
+    padding:0 10px;
+}
+
+footer section p{
+    color:white;
+    opacity:0.8;
+    margin-bottom: 45px;
+}
+
+.borderright{
+    border-right:1px solid white; 
+}
+
+.footericon{
+    color:white;
+    font-size:35px;
+    margin:0 0 0 15px;
+    opacity:0.6;
+}
+
+@media only screen and (min-width: 600px){
+    #cookbook{
+        height:30vh;
+        width:30vw;
+    }
+
+    #intro{
+        height:30vh;
+        width:30vw;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #about section {
+        display:flex; 
+        flex-direction:row;
+    }
+
+    #about section section section section h2{
+        width:calc((100vw - 45px)/2);
+    }
+
+    #about section section section h2{
+        border-top:1px solid black;
+        padding:50px 0 25px;
+    }
+
+    .normal {
+        font-size:120%; 
+        line-height:25px; 
+        padding:15px 50px;
+    }
+
+    #bottom{
+        padding:15px 50px 0;
+    }
+
+    #blueberrymuffin{
+        display:inherit;
+    }
+
+    #tunamelt{
+        display:inherit;
+    }
+    
+    #chickentortillasoup{
+        display:inherit;
+    }
+        
+    #cookiedoughicecreamsandwiches{ 
+        display:inherit;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #subscription{
+        height:8vh;
+    }
+
+    #subscription form{
+        flex-direction:row;
+        align-items:center;
+        height:8vh;
+    }
+
+    #balance{
+        padding: 0 20px 12px 0;
+    }
+
+    .sectionlayout {
+        height: 60vh;
+    }
+
+    .sectionlayout > p{
+        font-size:110%;
+        width:20%;
+        left:40%;
+    }
+
+    .sectionlayout > section {
+        height:calc( 60vh - 16px);
+    }
+
+    #about h1{
+        top:12px;
+        width:20%;
+        left:40%;
+    }
+
+    #cookbook{
+        height:40vh;
+        width:20vw;
+    }
+
+    #intro{
+        height:40vh;
+        width:20vw;
+    }
+}
+
+
+
+
+
