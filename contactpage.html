@@ -30,10 +30,9 @@
                     <a class="navigationsocialicon" href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook-square"></i></a>
                     <a class="navigationsocialicon" href="https://www.instagram.com/"  id="instagram1" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a class="navigationsocialicon" href="https://twitter.com/?lang=en"  target="_blank"><i class="fa fa-twitter-square"></i></a>
-                    <form action="/action_page.php">
-                        <label for="gsearch">search recipes</label>
+                    <form action="index.html">
                         <a href=""  target="_blank"><i class="fa fa-search"></i></a>
-                        <input type="search" id="gsearch" name="gsearch">
+                        <input type="search" id="gsearch" placeholder="try apple pie?" name="gsearch">
                     </form>
                 </section>
                 <section id="navigationpage">
@@ -53,20 +52,19 @@
         </header>
 
         <section id="subscription">
-            <form action="/action_page.php">
-                <label id="balance">Get the Latest Recipes Right in your Inbox:</label>
+            <form action="contactpage.html" id="newsletter" >
+                <label for="email" id="balance">Get the Latest Recipes Right in your Inbox:</label>
                 <section>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="xxx@abc..." required>
                     <section>
-                        <label for="email">email address</label>
-                        <a href=""  target="_blank" onclick="sendemail()"><i class="fa fa-chevron-right"></i></a>
+                        <button id="submitbutton" type="submit"> <i class="fa fa-chevron-right"></i></button>
                     </section>
                 </section>
             </form>
         </section>
 
         <section id="form">
-            <form action="/action_page.php">
+            <form action="recipe.html" method="POST">
                 <label for="title">Leave Your Review</label>
                 <section>
                     <section class="top">
@@ -86,7 +84,7 @@
                         </section>
                         <section id="top">
                             <label for="comment">Comment*</label><br>
-                            <textarea type="text" name="comment1" id="comment1" required></textarea>
+                            <input type="text" name="usercomment" id="usercomment" required> 
                         </section>
                     </section>
                     <section class="top">
@@ -100,7 +98,7 @@
                                 <i class="fa fa-star-o" id="star5"></i>
                             </section>
                             <section>
-                                <input type="submit" id="submit" value="Submit">
+                                <input onclick="handleSubmit()" type="submit" id="submit" value="Submit">
                             </section>
                         </section>
                     </section>
@@ -136,10 +134,12 @@
             </section>
         </footer>
     <script>
-        var address=document.querySelector("#email");
 
-        function sendemail(){
-            alert("Thank you for subscribing! A confirmation email has been sent to the address " + address.value);
+        var email=document.querySelector("#email");
+        document.getElementById("newsletter").addEventListener("submit",notify);
+        function notify() {
+            alert("You have successfully subscribed. A confirmation email has been sent to " + email.value);
+          
         }
 
         var s1=document.querySelector("#star1");
@@ -281,23 +281,13 @@
             }    
             
         }
-        
-        var usercomment=document.querySelector("#usercomment");
-        submit.addEventListener("click",postreview);
-        function postreview(){
-            usercomment.textContent=comment.value();
-        }
 
         function handleSubmit () {
-            const comment2 = document.getElementById("comment1").value;
-
-    // to set into local storage
-    /* localStorage.setItem("NAME", name);
-    localStorage.setItem("SURNAME", surname); */
+            const usercomment = document.getElementById("usercomment").value;
     
-            sessionStorage.setItem("comment2", comment2);
+            sessionStorage.setItem("USERCOMMENT", usercomment);
 
-        return;
+            return;
         }
 
     </script>
