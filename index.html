@@ -34,9 +34,9 @@
                     <a class="navigationsocialicon" id="fb1" href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook-square"></i></a>
                     <a class="navigationsocialicon" id="ins1" href="https://www.instagram.com/"  target="_blank"><i class="fa fa-instagram"></i></a>
                     <a class="navigationsocialicon" id="tw1" href="https://twitter.com/?lang=en"  target="_blank"><i class="fa fa-twitter-square"></i></a>
-                    <form action="/action_page.php">
+                    <form action="index.html">
                         <a href=""  target="_blank"><i class="fa fa-search"></i></a>
-                        <input type="search" placeholder="search recipes" id="gsearch" name="gsearch">
+                        <input type="search" placeholder="try apple pie?" id="gsearch" name="gsearch">
                         <!-- <a href=""  target="_blank"><i class="fa fa-chevron-right"></i></a> -->
                     </form>
                 </section>
@@ -57,13 +57,12 @@
         </header>
 
         <section id="subscription">
-            <form action="/action_page.php">
+            <form action="index.html" id="newsletter" >
                 <label for="email" id="balance">Get the Latest Recipes Right in your Inbox:</label>
                 <section>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" placeholder="xxx@abc..." name="email" required>
                     <section>
-                        <label for="gsearch">email address</label>
-                        <button id="submitbutton" type="submit" onclick="myFunc(e)"> <i class="fa fa-chevron-right"></i></button>
+                        <button id="submitbutton" type="submit"> <i class="fa fa-chevron-right"></i></button>
                     </section>
                 </section>
             </form>
@@ -196,16 +195,8 @@
             </section>
         </footer>
     <script>
-        var address=document.querySelector("#email");
-        var submitbutton=document.querySelector("#submitbutton");
-        submitbutton.addEventListener("click",sendemail);
 
-        function sendemail(){
-            alert("Thank you for subscribing. A confirmation email has been sent to the address " + address.value);
-            }
-            
-        
-
+ 
         var yt1=document.querySelector("#yt1");
         var fb1=document.querySelector("#fb1");
         var ins1=document.querySelector("#ins1");
@@ -329,16 +320,13 @@
         }
 
 
-        var searchtext=querySelector("#searchtext");
-        searchtext.addEventListener("click",removetext);
-
-        function removetext(){
-            label.style.color="white";
+        var email=document.querySelector("#email");
+        document.getElementById("newsletter").addEventListener("submit",notify);
+        function notify() {
+            alert("You have successfully subscribed. A confirmation email has been sent to " + email.value);
+          
         }
 
-        function myFunc(e){
-                a.preventDefault();
-        }
             
     </script>
     </body>
